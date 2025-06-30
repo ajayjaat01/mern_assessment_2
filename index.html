@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex flex-col items-center gap-10 p-20 h-screen">
+        <header class="flex flex-col gap-5 text-white text-xl text-center">
+            <h1 class="text-4xl font-bold">🍳 Recipe Finder</h1>
+            <p class="text-black">Find delicious recipes by ingredient</p>
+        </header>
+        <div class="bg-white p-5 rounded-xl flex flex-col gap-5">
+            <p class="flex gap-2"><img class="w-5" src="./search.png" alt="searcon-icon">Search Recipe</p>
+            <form class="flex w-full h-1/2 gap-5">
+                <input id="input-city" class=" py-2 px-5 focus:outline-[#ff9a9e] rounded-md border border-pink-300" placeholder="Enter Recipe name...." type="text">
+                <button class=" serach-but  rounded-md " type="submit"><img class="w-15 px-5 py-2" src="./search.png" alt="search-icon"></button>
+            </form>
+        </div>
+        <div id="result">
+            
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
